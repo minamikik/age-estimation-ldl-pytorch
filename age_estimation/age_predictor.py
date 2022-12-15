@@ -11,7 +11,7 @@ from facenet_pytorch import MTCNN
 
 from .age_model import get_model
 from .age_dataset import expand_bbox
-from age_defaults import _C as config
+from .age_defaults import _C as config
 
 class AgePredictor:
     def __init__(self, model_path):
