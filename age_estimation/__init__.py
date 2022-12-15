@@ -1,5 +1,5 @@
-import age_model
-import age_dataset
-import age_defaults
+from .age_model import get_model
+from .age_defaults import _C as config
+from .age_dataset import expand_bbox
 
-__all__ = ["age_model", "age_dataset", "age_defaults"]
+__all__ = ["get_model", "config", "expand_bbox"]
