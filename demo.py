@@ -10,12 +10,12 @@ import torch.backends.cudnn as cudnn
 import torch.optim
 import torch.utils.data
 import torch.nn.functional as F
-from model import get_model
-from defaults import _C as cfg
+from age_model import get_model
+from age_defaults import _C as cfg
 from time import perf_counter
 from facenet_pytorch import MTCNN
 from PIL import Image
-from dataset import expand_bbox
+from age_dataset import expand_bbox
 import torchvision
 import math
 

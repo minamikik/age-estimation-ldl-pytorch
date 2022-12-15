@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='age_estimation_ldl_pytorch',
+    name='age-estimation-ldl-pytorch',
     version='0.0.1',
     description='',
     packages=find_packages(),

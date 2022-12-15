@@ -14,9 +14,9 @@ from torch.utils.data import DataLoader
 import torch.nn.functional as F
 import pretrainedmodels
 import pretrainedmodels.utils
-from model import get_model
-from dataset import FaceDataset
-from defaults import _C as cfg
+from age_model import get_model
+from age_dataset import FaceDataset
+from age_defaults import _C as cfg
 from datetime import datetime
 from matplotlib import pyplot as plt
 import loss as L

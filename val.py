@@ -14,9 +14,9 @@ from torch.utils.data import DataLoader
 import torch.nn.functional as F
 import pretrainedmodels
 import pretrainedmodels.utils
-from model import get_model
-from dataset import FaceDataset, expand_bbox, normal_sampling
-from defaults import _C as cfg
+from age_model import get_model
+from age_dataset import FaceDataset, expand_bbox, normal_sampling
+from age_defaults import _C as cfg
 from matplotlib import pyplot as plt
 import loss as L
 import pandas as pd
