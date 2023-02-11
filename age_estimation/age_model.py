@@ -158,7 +158,6 @@ def get_model(model_name="se_resnext50_32x4d", num_classes=101, pretrained="imag
 
 def main():
     model = get_model(model_name="thinage")
-    print(model)
 
 
 if __name__ == '__main__':
