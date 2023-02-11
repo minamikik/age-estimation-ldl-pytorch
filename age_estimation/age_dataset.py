@@ -149,12 +149,8 @@ def main():
     parser.add_argument("--data_dir", type=str, required=True)
     parser.add_argument("--dataset", type=str, required=True)
     args = parser.parse_args()
-    print(args)
     # dataset = FaceDataset(args.data_dir, "train", args.dataset)
-    # print("train dataset len: {}".format(len(dataset)))
     dataset = FaceDataset(args.data_dir, "valid", args.dataset, augment=True)
-    print("valid dataset len: {}".format(len(dataset)))
-    print(dataset[0])
 
 
 if __name__ == '__main__':
