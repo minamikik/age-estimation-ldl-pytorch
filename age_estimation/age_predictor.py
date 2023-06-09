@@ -14,7 +14,7 @@ from .age_dataset import expand_bbox
 from .age_defaults import _C as config
 
 class AgePredictor:
-    def __init__(self, model_path):
+    def __init__(self, model_path, device='cuda'):
         self.model_path = model_path
 
         try:
@@ -24,7 +24,7 @@ class AgePredictor:
                 r = requests.get(url, allow_redirects=True)
                 open(model_path, 'wb').write(r.content)
 
-            self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+            self.device = device
 
             self.model = get_model(model_name=config.MODEL.ARCH, pretrained=None)
 
